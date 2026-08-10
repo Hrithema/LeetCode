@@ -6,5 +6,5 @@ class Solution:
                 square = j* j
                 if not ans [i - square]:
                     ans [i] = True
-                    # break
+                    break
         return ans [n]
