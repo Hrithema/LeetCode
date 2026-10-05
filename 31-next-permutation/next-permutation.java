@@ -31,13 +31,13 @@ class Solution {
 
         int i = pivot+1;
         int j = n;
-        Arrays.sort(nums, i, n+1);
-        // while(i<=j){
-        //     int temp = nums[i];
-        //     nums[i] = nums[j];
-        //     nums[j] = temp;
-        //     i++; j--;
-        // }
+        // Arrays.sort(nums, i, n+1);
+        while(i<=j){
+            int temp = nums[i];
+            nums[i] = nums[j];
+            nums[j] = temp;
+            i++; j--;
+        }
                
     }
 }
