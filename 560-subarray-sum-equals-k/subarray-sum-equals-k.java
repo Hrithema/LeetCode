@@ -5,7 +5,10 @@ class Solution {
             int sum = 0;
             for(int j = i; j<nums.length; j++){
                 sum += nums[j];
-                if(sum == k) count++;
+                if(sum == k) {
+                    count++;
+                    continue;
+                }
             }
         }
         return count;
