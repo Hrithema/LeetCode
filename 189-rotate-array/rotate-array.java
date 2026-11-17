@@ -1,5 +1,5 @@
 class Solution {
-    public void rotate(int[] nums, int k) {
+    public void rotate(int[] nums, int k) { 
         k = k % nums.length;
         int n = nums.length;
         if(n == 0) return;
@@ -8,6 +8,8 @@ class Solution {
         reverse(nums, 0, k-1);
         reverse(nums, k, n-1);
     }
+    //Time complexity = O(n) 
+    //Space complexity = O(1)
     public int [] reverse(int[] nums, int start, int end){
         while(start<end){
             int temp = nums[start];
